@@ -156,10 +156,10 @@ public abstract class MTELargeBoilerBase extends MTEExtendedPowerMultiBlockBase<
                     "FFFFF"
                 }, {
                     "  CCC",
-                    "  C C",
-                    "PPC C",
-                    "PCC P",
-                    "C   C",
+                    "  C-C",
+                    "PPC-C",
+                    "PCC-P",
+                    "C---C",
                     "FFFFF"
                 }, {
                     "   C ",
@@ -252,7 +252,7 @@ public abstract class MTELargeBoilerBase extends MTEExtendedPowerMultiBlockBase<
                         .build());
         }
         tt.addPollutionAmount(getPollutionPerSecond(null))
-            .beginStructureBlock(5, 6, 3, false)
+            .beginStructureBlock(5, 6, 3, true)
             .addController("Front center, 2nd layer")
             .addCasing("20-28", getCasingMaterial() + " " + getCasingBlockType(), false)
             .addCasing("5-15", getCasingMaterial() + " Firebox Casing", false)
